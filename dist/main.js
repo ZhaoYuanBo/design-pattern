@@ -41,5 +41,7 @@ var Sheep_1 = require("./ProtoType/Sheep");
     var sheep2_2 = sheep_2;
     console.log("sheep == sheep_3: ".concat(sheep == sheep_3));
     console.log("sheep2_2 == sheep_2: ".concat(sheep2_2 == sheep_2));
+
+// 111111111111
 }
 //# sourceMappingURL=main.js.map
