@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Glass_1 = require("./ProtoType/Glass");
-var Sheep_1 = require("./ProtoType/Sheep");
+var Phone_1 = require("./Adapter/Phone");
+var VoltageAdapter_1 = require("./Adapter/VoltageAdapter");
 //简单工厂调试
 {
     // let HZpz =new Order('HZ');
@@ -25,25 +25,26 @@ var Sheep_1 = require("./ProtoType/Sheep");
     // console.log(`sheep == sheep_3: ${sheep == sheep_3}`);
     // console.log(`sheep2_2 == sheep_2: ${sheep2_2 == sheep_2}`);
     //深拷贝
-    var glass = new Glass_1.Glass('灰色', 20);
-    var sheep = new Sheep_1.Sheep(3, undefined, glass);
-    console.log("origin : ".concat(JSON.stringify(sheep)));
-    var sheep_1 = sheep.deepClone();
-    var sheep_2 = sheep.deepClone();
-    var sheep_3 = sheep.deepClone();
-    console.log("sheep_1 : ".concat(JSON.stringify(sheep_1), "\n"));
-    sheep.age = 5;
-    sheep.glass.color = '白色';
-    console.log("origin: ".concat(JSON.stringify(sheep)));
-    console.log("sheep_2: ".concat(JSON.stringify(sheep_2), "\n"));
-    sheep_2.canCopy();
-    console.log("".concat(sheep_2.canNotCopy, "\n")); // undefined
-    var sheep2_2 = sheep_2;
-    console.log("sheep == sheep_3: ".concat(sheep == sheep_3));
-    console.log("sheep2_2 == sheep_2: ".concat(sheep2_2 == sheep_2));
-
-// 111111111111
-//2222222222
-//333333333
+    // const glass = new Glass('灰色', 20);
+    // const sheep = new Sheep(3, undefined, glass);
+    // console.log(`origin : ${JSON.stringify(sheep)}`);
+    // const sheep_1 = sheep.deepClone();
+    // const sheep_2 = sheep.deepClone();
+    // const sheep_3 = sheep.deepClone();
+    // console.log(`sheep_1 : ${JSON.stringify(sheep_1)}\n`);
+    // sheep.age = 5;
+    // sheep.glass.color = '白色';
+    // console.log(`origin: ${JSON.stringify(sheep)}`);
+    // console.log(`sheep_2: ${JSON.stringify(sheep_2)}\n`);
+    // sheep_2.canCopy();
+    // console.log(`${sheep_2.canNotCopy}\n`);     // undefined
+    // const sheep2_2 = sheep_2;
+    // console.log(`sheep == sheep_3: ${sheep == sheep_3}`);
+    // console.log(`sheep2_2 == sheep_2: ${sheep2_2 == sheep_2}`);
+}
+{
+    var phone = new Phone_1.Phone();
+    var va = new VoltageAdapter_1.VoltageAdapter();
+    phone.charging(va);
 }
 //# sourceMappingURL=main.js.map
