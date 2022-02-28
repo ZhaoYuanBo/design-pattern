@@ -54,7 +54,10 @@ import { Sheep } from "./ProtoType/Sheep";
 }
 
 { 
-    const phone = new Phone();
-    const va = new VoltageAdapter();
-    phone.charging(va);
+    // const phone = new Phone();
+    // const va = new VoltageAdapter();
+    // phone.charging(va);
+}
+
+{ 
 }

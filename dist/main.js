@@ -1,7 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Phone_1 = require("./Adapter/Phone");
-var VoltageAdapter_1 = require("./Adapter/VoltageAdapter");
 //简单工厂调试
 {
     // let HZpz =new Order('HZ');
@@ -43,8 +41,10 @@ var VoltageAdapter_1 = require("./Adapter/VoltageAdapter");
     // console.log(`sheep2_2 == sheep_2: ${sheep2_2 == sheep_2}`);
 }
 {
-    var phone = new Phone_1.Phone();
-    var va = new VoltageAdapter_1.VoltageAdapter();
-    phone.charging(va);
+    // const phone = new Phone();
+    // const va = new VoltageAdapter();
+    // phone.charging(va);
+}
+{
 }
 //# sourceMappingURL=main.js.map

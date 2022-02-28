@@ -5,28 +5,27 @@ exports.Pizza = void 0;
  * 抽象 Pizza类，制作过程分为 准备-烘烤-切块-打包
  * 其中 准备 过程设为抽象方法
  */
-var Pizza = /** @class */ (function () {
-    function Pizza() {
+class Pizza {
+    constructor() {
     }
-    Pizza.prototype.make = function () {
+    make() {
         this.prepare();
         this.bake();
         this.cut();
         this.box();
-    };
-    Pizza.prototype.bake = function () {
-        console.log("\u6B63\u5728\u70D8\u70E4 ".concat(this.type, " \u62AB\u8428 "));
-    };
-    Pizza.prototype.cut = function () {
-        console.log("\u6B63\u5728\u5207\u5757 ".concat(this.type, " \u62AB\u8428"));
-    };
-    Pizza.prototype.box = function () {
-        console.log("\u6B63\u5728\u6253\u5305 ".concat(this.type, " \u62AB\u8428"));
-    };
-    Pizza.prototype.setType = function (type) {
+    }
+    bake() {
+        console.log(`正在烘烤 ${this.type} 披萨 `);
+    }
+    cut() {
+        console.log(`正在切块 ${this.type} 披萨`);
+    }
+    box() {
+        console.log(`正在打包 ${this.type} 披萨`);
+    }
+    setType(type) {
         this.type = type;
-    };
-    return Pizza;
-}());
+    }
+}
 exports.Pizza = Pizza;
 //# sourceMappingURL=Pizza.js.map

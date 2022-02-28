@@ -1,1 +1,1 @@
-{"version":3,"file":"Voltage220V.js","sourceRoot":"","sources":["../../src/Adapter/Voltage220V.ts"],"names":[],"mappings":";;;AAAA;IAAA;IAOA,CAAC;IALG,gCAAU,GAAV;QACI,OAAO,CAAC,GAAG,CAAC,YAAY,CAAC,CAAC;QAE1B,OAAO,GAAG,CAAC;IACf,CAAC;IACL,kBAAC;AAAD,CAAC,AAPD,IAOC;AAPY,kCAAW"}
+{"version":3,"file":"Voltage220V.js","sourceRoot":"","sources":["../../src/Adapter/Voltage220V.ts"],"names":[],"mappings":";;;AAAA,MAAa,WAAW;IAEpB,UAAU;QACN,OAAO,CAAC,GAAG,CAAC,YAAY,CAAC,CAAC;QAE1B,OAAO,GAAG,CAAC;IACf,CAAC;CACJ;AAPD,kCAOC"}
