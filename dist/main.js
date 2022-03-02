@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const Client_1 = require("./Builder/Client");
 //简单工厂调试
 {
     // let HZpz =new Order('HZ');
@@ -46,5 +47,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
     // phone.charging(va);
 }
 {
+    Client_1.Client.main();
 }
 //# sourceMappingURL=main.js.map

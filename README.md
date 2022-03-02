@@ -15,14 +15,14 @@
 
 - 单例模式（Singleton）
 - 工厂（方法）模式（Factory/FactoryMethod） √ 2022年1月14日
-- 抽象工厂模式（Factory/AbstractFactory）
+- 抽象工厂模式（Factory/AbstractFactory）  √
 - 原型模式（ProtoType）
-- 建造者模式（Builder）
+- 建造者模式（Builder）√
 
 - 适配器模式（Adapter）
 - 桥接模式（Bridge）
 - 装饰者模式（Decorator）
-- 组合模式（Composite）
+- 组合模式（Composite）√
 - 外观模式（Facade）
 - 享元模式（Flyweight）
 - 代理模式（Proxy）

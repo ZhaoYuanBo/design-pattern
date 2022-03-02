@@ -1,6 +1,7 @@
 
 import { Phone } from "./Adapter/Phone";
 import { VoltageAdapter } from "./Adapter/VoltageAdapter";
+import { Client } from "./Builder/Client";
 import { Order } from "./Factory/Order/Order";
 import { Glass } from "./ProtoType/Glass";
 import { Sheep } from "./ProtoType/Sheep";
@@ -11,7 +12,7 @@ import { Sheep } from "./ProtoType/Sheep";
 }
 
 //原型模式调试
-{   
+{
     //浅拷贝
     // const glass = new Glass('灰色', 20);
     // const sheep = new Sheep(1, '', glass);
@@ -30,7 +31,7 @@ import { Sheep } from "./ProtoType/Sheep";
     // const sheep2_2 = sheep_2;
     // console.log(`sheep == sheep_3: ${sheep == sheep_3}`);
     // console.log(`sheep2_2 == sheep_2: ${sheep2_2 == sheep_2}`);
-    
+
     //深拷贝
     // const glass = new Glass('灰色', 20);
     // const sheep = new Sheep(3, undefined, glass);
@@ -53,11 +54,12 @@ import { Sheep } from "./ProtoType/Sheep";
     // console.log(`sheep2_2 == sheep_2: ${sheep2_2 == sheep_2}`);
 }
 
-{ 
+{
     // const phone = new Phone();
     // const va = new VoltageAdapter();
     // phone.charging(va);
 }
 
-{ 
+{
+    Client.main();
 }
