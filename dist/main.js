@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const Client_1 = require("./Builder/Client");
+const Client_1 = require("./Facade/Client");
 //简单工厂调试
 {
     // let HZpz =new Order('HZ');

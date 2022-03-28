@@ -1,7 +1,7 @@
 
 import { Phone } from "./Adapter/Phone";
 import { VoltageAdapter } from "./Adapter/VoltageAdapter";
-import { Client } from "./Builder/Client";
+import { Client } from "./Facade/Client";
 import { Order } from "./Factory/Order/Order";
 import { Glass } from "./ProtoType/Glass";
 import { Sheep } from "./ProtoType/Sheep";
